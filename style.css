@@ -113,57 +113,142 @@ url("background.jpg");
     color:#aaa;
 }
 
-.project-card a{
+.about{
 
-color:#38bdf8;
+    min-height:100vh;
 
-text-decoration:none;
+    padding:100px 10%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
-.skill-container{
+.section-title p{
 
-display:flex;
-
-flex-wrap:wrap;
-
-gap:15px;
+    color:#666;
+    letter-spacing:4px;
+    margin-bottom:10px;
 }
 
-.skill-container span{
+.section-title h2{
 
-background:#151515;
-
-padding:15px 25px;
-
-border-radius:30px;
+    font-size:3rem;
+    margin-bottom:40px;
 }
 
-.resume{
+.about-content{
 
-align-items:center;
-text-align:center;
+    max-width:900px;
 }
 
-.contact{
+.about-content > p{
 
-align-items:center;
-text-align:center;
+    font-size:1.2rem;
+    line-height:2;
+
+    color:#d0d0d0;
+
+    margin-bottom:50px;
 }
 
-.contact p{
-margin:10px 0;
+.about-info{
+
+    display:flex;
+    gap:80px;
 }
 
-footer{
+.about-info h3{
 
-padding:30px;
-
-text-align:center;
-
-background:#111;
+    margin-bottom:15px;
 }
 
-html{
-scroll-behavior:smooth;
+.about-info p{
+
+    color:#aaa;
+    line-height:1.8;
 }
 
+.projects{
+
+    min-height:100vh;
+
+    padding:100px 10%;
+}
+
+.project-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+}
+
+.project-card{
+
+    background:rgba(255,255,255,0.04);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.3s;
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,0.07);
+}
+
+.project-card h3{
+
+    margin-bottom:20px;
+
+    font-size:1.4rem;
+}
+
+.project-card p{
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+}
+
+.project-tech{
+
+    color:#888;
+
+    margin-bottom:25px;
+
+    font-size:.9rem;
+}
+
+.project-links{
+
+    display:flex;
+
+    gap:20px;
+}
+
+.project-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    padding:10px 16px;
+
+    border-radius:10px;
+}
