@@ -294,3 +294,15 @@ url("background.jpg");
 
     background:rgba(255,255,255,.1);
 }
+
+.resume{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
